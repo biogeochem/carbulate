@@ -22,11 +22,11 @@ This function calculates the speciation of dissolved inorganic carbon given the 
 It will add on the concenrations of each carbonate species (CO2(aq), HCO3-, CO3--) to your dataframe 'df'.
 }
 \examples{
-SAMMS_17 <- carbulate(SAMMS_17, 'DIC_mgC.L', 'pH', 'Temp_C')
+water.df <- carbulate(water.df, 'DIC_mgC.L', 'pH', 'Temp_C')
 }
 \author{
 Pieter J. K. Aukes
 }
-\keyword{DIC,}
+\keyword{DIC}
 \keyword{carbonate}
 \keyword{speciation}
