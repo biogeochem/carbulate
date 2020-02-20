@@ -1,9 +1,10 @@
 #' Calculate Carbonate Speciation using DIC, pH, and Temperature
 #'
 #' This function calculates the speciation of dissolved inorganic carbon given the measured pH, DIC concentration, and water temperature.
+#' It will add on the concenrations of each carbonate species (CO2(aq), HCO3-, CO3--) to your dataframe 'df'.
 #' @keywords DIC, carbonate speciation
 #' @author Pieter J. K. Aukes
-#' @param df Your dataframe with values
+#' @param df Your dataframe with parameters of interest
 #' @param DIC_col_mg.L Name of column that contains your measured dissolved inorganic carbon concentration (mgC/L)
 #' @param pH_col Name of column with your measured pH
 #' @param temp_col_C Name of column with your measured water temperature (in celsius)

@@ -7,7 +7,7 @@
 carbulate(df, DIC_col_mg.L, pH_col, temp_col_C, pressure_col_kPa)
 }
 \arguments{
-\item{df}{Your dataframe with values}
+\item{df}{Your dataframe with parameters of interest}
 
 \item{DIC_col_mg.L}{Name of column that contains your measured dissolved inorganic carbon concentration (mgC/L)}
 
@@ -19,6 +19,7 @@ carbulate(df, DIC_col_mg.L, pH_col, temp_col_C, pressure_col_kPa)
 }
 \description{
 This function calculates the speciation of dissolved inorganic carbon given the measured pH, DIC concentration, and water temperature.
+It will add on the concenrations of each carbonate species (CO2(aq), HCO3-, CO3--) to your dataframe 'df'.
 }
 \examples{
 SAMMS_17 <- carbulate(SAMMS_17, 'DIC_mgC.L', 'pH', 'Temp_C')
