@@ -20,7 +20,7 @@ pressure_kPa - Name of column with the atmospheric pressure where the sample was
 
 ## Example
 This is how you would input this function to add the carbonate species to the dataframe 'water.df':  
-water.df <- carbulate(water.df, 'DIC_mgC.L', 'pH', 'Temp_C')
+water.df <- carbulate(water.df, 'DIC_mgC.L', 'pH', 'Temp_C', 'pressure_kPa')
 
 
 ## Calculations
