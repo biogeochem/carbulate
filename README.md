@@ -26,7 +26,8 @@ Example
 
 This is how you would input this function to add the carbonate species
 to the dataframe ‘water.df’:  
-water.df &lt;- carbulate(water.df, ‘DIC\_mgC.L’, ‘pH’, ‘Temp\_C’)
+water.df &lt;- carbulate(water.df, ‘DIC\_mgC.L’, ‘pH’, ‘Temp\_C’,
+‘pressure\_kPa’)
 
 Calculations
 ------------
@@ -40,6 +41,6 @@ American Chemical Society 65 (10): p2030-2037.
 HCO3- &lt;=&gt; CO3– + H+ ; Harned & Scholes Jr. 1941. Journal of the
 American Chemical Society 63 (6): p1706-1709.
 
-Solubility coefficient of CO2 in water (Henry’s Law); Harned & Davis
-Jr. (1943) and as used in Venkiteswaran et al. 2014. PLoS ONE 9 (7):
-p22-25. doi: 10.1371/journal.pone.0101756.
+Solubility coefficient of CO2 in water (Henry’s Law); Harned & Davis Jr.
+(1943) and as used in Venkiteswaran et al. 2014. PLoS ONE 9 (7): p22-25.
+doi: 10.1371/journal.pone.0101756.
