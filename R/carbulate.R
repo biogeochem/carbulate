@@ -12,8 +12,6 @@
 #' @examples
 #' water.df <- carbulate(water.df, 'DIC_mgC.L', 'pH', 'Temp_C')
 
-
-
 carbulate <- function(df, DIC_col_mg.L, pH_col, temp_col_C, pressure_col_kPa){
 
   # conversion calculations:
