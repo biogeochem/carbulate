@@ -1,10 +1,10 @@
-carbulate
-=========
+carbulate <img src="man/figures/carbulate_logo.png" width="120" align="right" />
+================================================================================
 
-This package will calculate the carbonate species (CO2(aq), HCO3-, CO3–)
-concentrations from a measured DIC concentration, pH value, and
-temperature of your water sample. Values will be added onto the
-dataframe ‘df’ you supply.
+This package will calculate the carbonate species (CO2<sub>(aq)</sub>,
+HCO<sub>3</sub><sup>-</sup>, CO\_3<sup>2-</sup>) concentrations from a
+measured DIC concentration, pH value, and temperature of your water
+sample. Values will be added onto the dataframe ‘df’ you supply.
 
 Parameters
 ----------
@@ -35,12 +35,14 @@ Calculations
 Temperature dependent K values were calculated according to the
 following references:
 
-CO2 + H2O &lt;=&gt; HCO3- + H+ ; Harned & Davis Jr. 1943. Journal of the
-American Chemical Society 65 (10): p2030-2037.
+*C**O*<sub>2</sub> + *H*<sub>2</sub>*O* ↔ *H**C**O*<sub>3</sub><sup>−</sup> + *H*<sup>+</sup>
+ ; Harned & Davis Jr. 1943. Journal of the American Chemical Society 65
+(10): p2030-2037.
 
-HCO3- &lt;=&gt; CO3– + H+ ; Harned & Scholes Jr. 1941. Journal of the
-American Chemical Society 63 (6): p1706-1709.
+*H**C**O*<sub>3</sub><sup>−</sup> ↔ *C**O*<sub>3</sub><sup>2−</sup> + *H*<sup>+</sup>
+ ; Harned & Scholes Jr. 1941. Journal of the American Chemical Society
+63 (6): p1706-1709.
 
-Solubility coefficient of CO2 in water (Henry’s Law); Harned & Davis Jr.
-(1943) and as used in Venkiteswaran et al. 2014. PLoS ONE 9 (7): p22-25.
-doi: 10.1371/journal.pone.0101756.
+Solubility coefficient of CO<sub>2</sub> in water (Henry’s Law); Harned
+& Davis Jr. (1943) and as used in Venkiteswaran et al. 2014. PLoS ONE 9
+(7): p22-25. doi: 10.1371/journal.pone.0101756.
