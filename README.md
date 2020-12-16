@@ -4,7 +4,7 @@ carbulate <img src="man/figures/carbulate_logo.png" width="120" align="right" />
 This package will calculate the carbonate species (CO<sub>2(aq)</sub>,
 HCO<sub>3</sub><sup>-</sup>, CO<sub>3</sub><sup>2-</sup>) concentrations
 from a measured DIC concentration, pH value, and temperature of your
-water sample. Values will be added onto the dataframe ‘df’ you supply.
+water sample. Values will be added onto the dataframe ‘dat’ you supply.
 
 Installation
 ------------
@@ -15,9 +15,9 @@ Installation
 Parameters
 ----------
 
-`carbulate(df, 'DIC_col_mg.L', 'pH_col', 'temp_col_C', 'pressure_kPa')`
+`carbulate(dat, 'DIC_col_mg.L', 'pH_col', 'temp_col_C', 'pressure_kPa')`
 
-`df` - your dataframe that contains all the variables  
+`dat` - your dataframe that contains all the variables  
 `DIC_col_mg.L` - Name of the column that contains the measured dissolved
 inorganic carbon concentration (mg C/L)  
 `pH_col` - Name of column with your measured pH  
@@ -30,9 +30,9 @@ Example
 -------
 
 This is how you would input this function to add the carbonate species
-to the dataframe `water.df`:
+to the dataframe `water.dat`:
 
-`water.df <- carbulate(water.df, 'DIC_mgC.L', 'pH', 'Temp_C', 'pressure_kPa')`
+`water.dat <- carbulate(water.dat, 'DIC_mgC.L', 'pH', 'Temp_C', 'pressure_kPa')`
 
 Calculations
 ------------
