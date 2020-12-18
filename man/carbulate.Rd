@@ -4,25 +4,31 @@
 \alias{carbulate}
 \title{Calculate Carbonate Speciation using DIC, pH, and Temperature}
 \usage{
-carbulate(df, DIC_col_mg.L, pH_col, temp_col_C, pressure_col_kPa)
+carbulate(dat, DIC_col_mg.L, pH_col, temp_col_C, pressure_col_kPa)
 }
 \arguments{
-\item{df}{Your dataframe with parameters of interest}
+\item{dat}{Your dataframe with parameters of interest}
 
 \item{DIC_col_mg.L}{Name of column that contains your measured dissolved inorganic carbon concentration (mgC/L)}
 
 \item{pH_col}{Name of column with your measured pH}
 
-\item{temp_col_C}{Name of column with your measured water temperature (in celsius)}
+\item{temp_col_C}{Name of column with your measured water temperature (in Celsius)}
 
-\item{pressure_kPa}{Name of column with the field atmospheric pressure (in kPa)}
+\item{pressure_col_kPa}{Name of column with the field atmospheric pressure (in kPa)}
 }
 \description{
 This function calculates the speciation of dissolved inorganic carbon given the measured pH, DIC concentration, and water temperature.
-It will add on the concenrations of each carbonate species (CO2(aq), HCO3-, CO3--) to your dataframe 'df'.
+It will add on the concentrations of each carbonate species (CO2(aq), HCO3-, CO3--) to your dataframe 'dat'.
 }
 \examples{
-water.df <- carbulate(water.df, 'DIC_mgC.L', 'pH', 'Temp_C')
+water.dat <- data.frame(sample = c('Lake A', 'Lake B', 'Lake C'),
+Baro_kPa = c(99.9,98.8,98.9),
+DIC_mgC.L = c(1.2,8.5,15),
+pH = c(6.8, 7.2, 5.5),
+Temp_C = c(12,15,18))
+
+water.dat <- carbulate(water.dat, 'DIC_mgC.L', 'pH', 'Temp_C', 'Baro_kPa')
 }
 \author{
 Pieter J. K. Aukes
