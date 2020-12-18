@@ -30,7 +30,8 @@ Example
 -------
 
 This is how you would input this function to add the carbonate species
-to the dataframe `water.dat`:
+to the dataframe `water.dat`. Note: parameters need to be in this order,
+and refer to a column name within brackets (`''`).
 
 `water.dat <- carbulate(water.dat, 'DIC_mgC.L', 'pH', 'Temp_C', 'pressure_kPa')`
 
