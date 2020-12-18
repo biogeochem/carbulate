@@ -15,16 +15,16 @@ Installation
 Parameters
 ----------
 
-`carbulate(dat, 'DIC_col_mg.L', 'pH_col', 'temp_col_C', 'pressure_kPa')`
+`carbulate(dat, 'DIC_col_mg.L', 'pH_col', 'temp_col_C', 'pressure_col_kPa')`
 
-`dat` - your dataframe that contains all the variables  
+`dat` - Your dataframe that contains all the variables  
 `DIC_col_mg.L` - Name of the column that contains the measured dissolved
 inorganic carbon concentration (mg C/L)  
 `pH_col` - Name of column with your measured pH  
 `temp_col_C` - Name of column with your measured water temperature (in
 Celsius)  
-`pressure_kPa` - Name of column with the atmospheric pressure where the
-sample was collected from (in kPa)
+`pressure_col_kPa` - Name of column with the atmospheric pressure where
+the sample was collected from (in kPa)
 
 Example
 -------
